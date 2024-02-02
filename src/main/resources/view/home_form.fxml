@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="393.0" prefWidth="515.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chatApplication.Controller.HomeFormController">
+   <children>
+      <ImageView fx:id="btnjon" fitHeight="48.0" fitWidth="117.0" layoutX="398.0" layoutY="323.0" onMouseClicked="#btnjonClick" onMouseEntered="#mouseEnterAnim" onMouseExited="#mouseExitAnim" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-join-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="182.0" text="create your chat" textFill="#5062ff">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="269.0" fitWidth="405.0" layoutX="59.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/3612880.jpg" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <TextField fx:id="txtjon" layoutX="261.0" layoutY="244.0" onAction="#txtjonOnActon" />
+      <Label layoutX="140.0" layoutY="206.0" prefHeight="17.0" prefWidth="121.0" text="Enter Your Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
