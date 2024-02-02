@@ -464,6 +464,7 @@ public class ClientController {
     public void btnLogOutClicked() throws IOException {
         outputStream.writeUTF("finish");
         outputStream.flush();
+
         Stage stage = (Stage) btnLogOut.getScene().getWindow();
         stage.close();
     }
